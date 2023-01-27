@@ -53,7 +53,7 @@ body {
 .header__basket {
   position: relative;
 }
-.header__basket span {
+.header__basket-on span {
   font-size: 11px;
   width: 15px;
   height: 15px;
@@ -84,4 +84,47 @@ body {
 }
 .menu__list-link:hover {
   border-bottom: 1px solid #5C5C5E;
+}
+
+.top {
+  min-height: calc(100vh - 81px);
+  background-image: url(../images/top-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+.top__title {
+  font-size: 96px;
+  padding-top: 15%;
+  margin-bottom: 10px;
+}
+.top__subtitle {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+.top__subtitle-text {
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+.top__btn-text {
+  font-size: 13px;
+  padding-top: 6px;
+}
+
+.buy-btn {
+  cursor: pointer;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  border: none;
+  display: flex;
+  padding: 0;
+  text-transform: uppercase;
+  padding: 1px;
+}
+.buy-btn__text {
+  color: #F6F4F5;
+  padding: 20px 110px;
+}
+.buy-btn__price {
+  background-color: #E6E4E5;
+  padding: 20px 105px;
 }/*# sourceMappingURL=styles.css.map */

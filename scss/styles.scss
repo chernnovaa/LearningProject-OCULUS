@@ -48,7 +48,7 @@ body {
   border-bottom: 1px solid #CACAD6;
   &__basket {
     position: relative;
-    & span { 
+    &-on span { 
       font-size: 11px;
       width: 15px;
       height: 15px;
@@ -80,4 +80,45 @@ body {
       }
     }
   }
+}
+.top {
+  min-height: calc(100vh - 81px);
+  background-image: url(../images/top-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  &__title {
+    font-size: 96px;
+    padding-top: 15%;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    font-size: 36px;
+    margin-bottom: 5px;
+    &-text {
+      font-size: 13px;
+      margin-bottom: 50px;
+    }
+  }
+  &__btn-text {
+    font-size: 13px;
+    padding-top: 6px;
+  }
+}
+.buy-btn {
+   cursor: pointer;
+   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+   border: none;
+   display: flex;
+   padding: 0;
+   text-transform: uppercase;
+   padding: 1px;
+   &__text {
+     color: #F6F4F5;
+     padding: 20px 110px;
+   }
+   &__price {
+    background-color: #E6E4E5;
+    padding: 20px 105px;
+   }
 }
