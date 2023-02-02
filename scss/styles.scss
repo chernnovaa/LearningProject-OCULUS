@@ -32,10 +32,23 @@ li{
 img{
   max-width: 100%;
 }
+button {
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
 .container {
   max-width: 1220px;
   padding: 0 10px;
   margin: 0 auto;
+}
+.section__title {
+  text-transform: uppercase;
+  font-weight: 400;
 }
 body {
   font-family: 'Helvetica', sans-serif;
@@ -48,6 +61,7 @@ body {
   border-bottom: 1px solid #CACAD6;
   &__basket {
     position: relative;
+    justify-self: end;
     &-on span { 
       font-size: 11px;
       width: 15px;
@@ -63,10 +77,13 @@ body {
       right: -2px;
     }
   }
+  &__logo {
+    justify-self: center;
+  }
 }
 .menu {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   height: 80px;
   &__list {
@@ -116,9 +133,81 @@ body {
    &__text {
      color: #F6F4F5;
      padding: 20px 110px;
+     text-transform: uppercase;
    }
    &__price {
     background-color: #E6E4E5;
     padding: 20px 105px;
    }
+}
+.features {
+  padding: 100px 0;
+  &__titles {
+    display: flex;
+  }
+  &__title {
+    flex-basis: 300px;
+    padding-right: 20px;
+  }
+  &__text {
+    max-width: 330px;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 2px;
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.tabs {
+  display: grid;
+  grid-template-columns: 300px auto;
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    &-item {
+      font-weight: 700;
+      margin-bottom: 20px;
+      &--active {
+        color: #070707;
+      }
+    }
+  }
+  &__content-item {
+    display: grid;
+    grid-template-columns: auto 280px;
+    grid-template-rows: auto 150px;
+    gap: 40px;
+  }
+  &__content-box h3 {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  &__content-img {
+    grid-row: 1/-1;
+    align-self: stretch;
+  }
+}
+.video {
+  grid-column: 2/3;
+  width: 280px;
+  height: 150px;
+  background-image: url(../images/content-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  padding: 9px 10px;
+  &__btn {
+    margin-left: 22px;
+  }
+  & span {
+    color: #F6F4F5;
+    font-size: 13px;
+  }
 }
