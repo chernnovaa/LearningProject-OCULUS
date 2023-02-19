@@ -284,6 +284,7 @@ body {
   margin-bottom: 110px;
   text-align: center;
   position: relative;
+  overflow-x: hidden;
   &__img {
     margin-bottom: 30px;
   }
@@ -300,5 +301,17 @@ body {
     line-height: 400px;
     opacity: 0.1;
     z-index: -1;
+    animation: line-text 6s linear 1s infinite;
+  }
+}
+
+@keyframes line-text {
+  from {
+    transform: translateX(115%);
+    transform-origin: right center;
+  }
+  to {
+   transform: translateX(-115%);
+   transform-origin: left center;
   }
 }
