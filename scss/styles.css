@@ -661,6 +661,10 @@ body {
     margin-bottom: 20px;
     gap: 30px;
   }
+  .buy__bg {
+    font-size: 300px;
+    line-height: 300px;
+  }
 }
 @media (max-width: 420px) {
   .top__title {
